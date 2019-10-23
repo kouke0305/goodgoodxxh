@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "我要取奶",
+  "navigationBarBackgroundColor": "#1296db",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true,
+  "usingComponents": {}
+}

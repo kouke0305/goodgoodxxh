@@ -1,0 +1,50 @@
+
+   
+<van-row wx:if="{{!isLoading}}" active="{{ active }}" bind:change="onChange">
+    <scroll-view scroll-y style="height: {{scrollHight}}px;" bindscrolltoupper="" bindscrolltolower="lower" class='d-list'>
+      <block wx:for='{{list}}' wx:key='{{i}}' data="{{item}}">
+        <view class="d-item">
+          <view bindtap="goDetails" data-id="{{item.cid}}" class="card">
+            <van-row gutter="4">
+              <van-col span="18">
+                <view>
+                  <i-icon type="activity_fill" size="28" color="#7E90F7"/>
+                  <text style='margin-left:10rpx' class="goods">售货机：{{item.end}}</text>
+                </view>
+                <view class="kong">
+                  <i-icon type="service" size="28" color="#7E90F7"/>
+                  <text class="goods">补奶种类：{{item.goods}}</text>
+                </view>
+                <view class='title'>
+                  <i-icon type="other" size="28" color="#7E90F7"/>
+                  <text style='margin-left:10rpx'>订购数量：{{item.number}}</text>
+                </view>
+                <view class='delivery kong'>
+                  <i-icon type="createtask" size="28" color="#7E90F7"/>
+                  <text class='title'> 订购天数：{{item.dispatchper}}</text>
+                </view>
+                <view class='delivery'>
+                  <i-icon type="time" size="28" color="#7E90F7"/>
+                  <text class='otime'> 开始时间：{{item.start}}</text>
+                </view>
+                <view class='delivery'>
+                  <i-icon type="time_fill" size="28" color="#7E90F7"/>
+                  <text class='otime'> 结束时间：{{item.end}}</text>
+                </view>
+            </van-col>
+              <view span="6" class="ll">
+                <i-tag class="i-tags" name="标签1" color="red" type="warn" wx:if="{{item.ostatus == 0}}">正在取货</i-tag>
+                <i-tag class="i-tags" name="标签2" color="green" type="waiting" wx:if="{{item.ostatus == 1}}">正在配送</i-tag>
+                <i-tag class="i-tags" name="标签3" color="blue" type="success" wx:if="{{item.ostatus == 2}}">配送成功</i-tag>
+              </view>
+            </van-row>
+          </view>
+      </view>
+      </block>
+     <view class='hint'>
+        <text wx:if="{{ unsureHasMoreData }}"></text>
+        <text wx:else>~ ~ ~ 无更多数据了 ~ ~ ~</text>
+      </view>
+    </scroll-view>
+</van-row>
+

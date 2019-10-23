@@ -1,0 +1,9 @@
+.canvas {
+  text-align:center;
+  margin:0,auto;
+  width:150px;
+  left:26%;
+  top:22%;
+  transform:tranlate(-50%,-50%);
+  position: absolute;
+}

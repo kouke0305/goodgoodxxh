@@ -1,0 +1,2 @@
+<!--pages/QRcode/QRcode.wxml-->
+<canvas class='canvas' canvas-id='canvas'></canvas>

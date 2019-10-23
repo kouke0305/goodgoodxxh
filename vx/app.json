@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/takeMilk/takeMilk",
+    "pages/myOrder/myOrder",
+    "pages/fillMilk/fillMilk",
+    "pages/my-contact/my-contact",
+    "pages/binding/binding",
+    "pages/logs/logs"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "请求获取你的地理位置？"
+    }
+  },
+  "enablePullDownRefresh": true,
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "佳宝分单系统",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "i-button": "../../dist/button/index",
+    "i-row": "../../dist/row/index",
+    "i-col": "../../dist/col/index",
+    "i-card": "../../dist/card/index",
+    "i-cell-group": "../../dist/cell-group/index",
+    "i-cell": "../../dist/cell/index",
+    "i-avatar": "../../dist/avatar/index",
+    "i-badge": "../../dist/badge/index",
+    "i-tag": "../../dist/tag/index",
+    "i-checkbox-group": "../../dist/checkbox-group/index",
+    "i-checkbox": "../../dist/checkbox/index",
+    "i-icon": "../../dist/icon/index",
+    "i-panel": "../../dist/panel/index",
+    "i-input": "../../dist/input/index"
+
+
+
+  },
+  "debug": true,
+  "plugins": {},
+  "sitemapLocation": "sitemap.json"
+}

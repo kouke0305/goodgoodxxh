@@ -1,0 +1,24 @@
+<!-- <scroll-view scroll-y style="height: {{scrollHight}}px;" bindscrolltoupper="" bindscrolltolower="lower" class='d-list'> -->  
+
+<view style="height:1rem"> </view>
+<view wx:for="{{ list }}" wx:key="{{index}}" class="kong">
+<i-card title="" extra="待取 {{item.number}} 件" thumb="{{'/pages/img/milk.jpg'}}" style="background:{{viewBg}}" type="default" bindtap="changeBg">
+<view slot="content">
+<i-panel title="">
+
+<i-checkbox-group current="{{current}}" bindchange="handleFruitChange">
+<i-checkbox position="{{position}}" wx:key="{{item.snumber}}" value="编号:{{item.snumber}}"></i-checkbox>
+</i-checkbox-group>
+</i-panel>
+</view>
+<view slot="content"> {{item.goods}} </view>
+<view slot="footer">将于 {{item.end}} 截止</view>
+</i-card>
+</view>
+
+
+
+<view style="height: 2.5rem;"></view>
+<view class='bottombut'>
+  <button class='btn' bindtap='generateCode'  type='primary'>生成取货码</button>
+</view>

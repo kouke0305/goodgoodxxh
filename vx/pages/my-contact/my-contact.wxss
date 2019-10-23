@@ -1,0 +1,7 @@
+/* pages/my-contact/my-contact.wxss */
+
+.top img{
+  width: 100%;
+  height: 4rem;
+  margin-top:5rem;
+}

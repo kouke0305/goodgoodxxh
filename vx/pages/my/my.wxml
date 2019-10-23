@@ -1,0 +1,68 @@
+<!-- 个人信息 -->
+<i-row class="my-container" style=" background-image: url('../img/bind.png');">
+    <i-col span="24" i-class="col-class"></i-col>
+    <image class="userinfo-avatar" src="{{logged ? avatarUrl : './user-unlogin.png'}}" background-size="cover"></image>
+</i-row>
+ 
+<!-- 一楼 -->
+<i-row class="first first1">
+    <!-- 一楼左：我要取奶 -->
+    <i-col span="12" i-class="col-class">
+      <i-row class="first" bindtap="acceptOrder">
+        <i-col span="24" i-class="col-class" class="bai bai1">
+          <view class="milk">我要取奶</view>
+          <image src='../img/getmilk.jpg' class="milk-img"></image>
+          <image src='../img/background.jpg' class="milk-img2"></image>
+        </i-col>
+      </i-row>
+    </i-col>
+
+    <i-col span="12" i-class="col-class">
+      <!-- 一楼右上：我要停止 -->
+      <i-row class="first first2 first3" bindtap="stopOrder">
+        <i-col span="24" i-class="col-class" class="bai bai1-2">
+          <view class="stop">我要停止</view>
+          <image src='../img/stop.png' class="stop-img"></image>
+          <image  style='' src='../img/background.jpg' class="stop-img1"></image>
+        </i-col>
+      </i-row>
+
+      <!-- 一楼右下：获取补奶 -->
+      <i-row class="first first2 first2-1" bindtap="fillMilk">
+        <i-col span="24" i-class="col-class" class="bai bai1-2">
+          <view class="stop">获取补奶</view>
+          <image src='../img/obtain.png' class="stop-img"></image>
+          <image src='../img/background.jpg' class="stop-img1 stop-img2"></image>
+        </i-col>
+      </i-row>
+
+    </i-col>
+</i-row>
+
+<!-- 二楼 -->
+<i-row class="two">
+    <!-- 二楼左：我的订单 -->
+    <i-col span="12" i-class="col-class" bindtap="myOrder">
+      <i-row class="two two1">
+        <i-col span="24" i-class="col-class" class="bai bai2">
+          <view class="order">我的订单</view>
+          <image src='../img/order.png' class="order-img"></image>
+          <image src='../img/contactus.jpg' class="order-img1"></image>
+        </i-col>
+      </i-row>
+    </i-col>
+
+    <!-- 二楼右：联系我们 -->
+    <i-col span="12" i-class="col-class" bindtap="contactUs">
+      <i-row class="two two1">
+        <i-col span="24" i-class="col-class" class="bai bai2">
+          <view class="order">联系我们</view>
+          <image src='../img/music.png' class="order-img"></image>
+          <image src='../img/contactus.jpg' class="order-img1"></image>
+        </i-col>
+      </i-row>
+    </i-col>
+
+</i-row>
+
+

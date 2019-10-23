@@ -1,0 +1,163 @@
+/* 列表开始 */
+page{ 
+  background: #F0F0F0;
+}
+.bottombut{
+  position: fixed;
+  bottom: 0;
+  width:100%;
+}
+.add_btn{
+  width:100%;
+}
+.canvas {
+  text-align:center;
+  margin:0,auto;
+  width:150px;
+  left:30%;
+  top:30%;
+  /* border: 1px solid red; */
+  /* transform:tranlate(-50%,.-50%); */
+}
+
+.d-item:last-child {
+  margin-bottom: 120rpx;
+}
+
+.d-item {
+  margin: 10rpx;
+  padding: 12rpx;
+  border-bottom: 1px solid #ddd;
+  margin-top:30rpx;
+  /* border: 1px solid red; */
+}
+
+.i_img {
+  position: relative;
+  width: 180rpx;
+  min-width: 180rpx;
+  margin-right: 18rpx;
+  display: flex;
+  justify-content: center;
+}
+
+image {
+  height: 180rpx;
+  width: 100%;
+}
+
+.title {
+  margin-bottom: 18rpx;
+  color: LightSeaGreen;
+}
+
+.tag {
+  display: inline-block;
+  color: rgb(241, 13, 13);
+}
+
+.delivery {
+  color: #7d7e80;
+  margin-top: 19rpx;
+}
+
+.delivery>text {
+  min-width: 140rpx;
+}
+
+.status {
+  margin-left: 20rpx;
+  text-align: center;
+}
+
+/* 列表结束 */
+
+.btn {
+  display: block;
+  width: 90%;
+  margin-top: 20rpx; 
+  margin-bottom: 1px;
+  border-radius:15px;
+}
+
+.btn>view {
+  text-align: center;
+}
+
+.goods {
+  color: SlateBlue;
+  display: inline-block;
+  width: 80%;
+  margin-left: 10rpx;
+  
+}
+
+.popview {
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+}
+.poptopleft{
+  font-size: 20px;
+  margin-top: 30rpx;
+  margin-left: 30rpx
+}
+.popbutton{
+  text-align: center;
+}
+.toprow{
+  margin-top: 20rpx;
+}
+.lefticon{
+  padding-left: 20rpx;
+}
+.righticon{
+  padding-right: 20rpx;
+  text-align: right;
+}
+.toprow2{
+  margin-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.searchfiled{
+  color: blue;
+}
+.iconbg{
+  background-color: red;
+}
+.radio-group {
+    border-bottom: 1px solid #ddd;
+}
+.radio {
+    display: block;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+}
+.rowbutton{
+  margin-top: 20rpx;
+}
+.userinfo{
+  width: 90px;
+  position: relative;
+  left: -1.5rem;
+  top: -2rem;
+}
+.card{
+  border: 1px solid #F0F0F0;
+  padding-left: 60px;
+}
+.top{
+  margin-top: -20px;
+}
+
+
+
+
+/*CSS*/
+.yuan{
+  position: relative;
+  left: 17rem;
+  top: -3.5rem;
+}
+.kong{
+  margin-bottom: 1rem;
+}
